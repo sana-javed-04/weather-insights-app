@@ -1,0 +1,143 @@
+/* poppin 500 medium font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    background: linear-gradient(135deg, #00feba50, #5b548a50), url(https://m-cdn.phonearena.com/images/article/143515-wide-two_1200/Apple-tests-adding-news-to-the-native-Weather-app-in-iOS-16.2-Beta.jpg);
+    text-align: center;
+    color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.srch-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.srch-box input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: #ebf7f5;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+
+input::placeholder {
+    color: rgb(156, 152, 152);
+}
+
+.srch-box button {
+    border: 0;
+    outline: 0;
+    background-color: #ebf7fc;
+    border-radius: 50%;
+    width: 3rem;
+    height: 2.6rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.srch-box button img {
+    width: 1rem;
+    vertical-align: middle;
+}
+
+.wther-icon {
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.temp {
+    font-size: 3.5rem;
+}
+
+.city {
+    font-weight: 400;
+    margin-top: -0.6rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 3rem;
+}
+
+.col {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.col img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.7rem;
+}
+
+.humidity,
+.wind {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 797px) {
+    .card {
+        width: 80%;
+    }
+
+    .details {
+        padding: 0 0.6rem;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .details {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.weather,
+.error {
+    opacity: 0;
+    height: 0; /* Collapses the container */
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.weather.show,
+.error.show {
+    margin-top: 1rem;
+    opacity: 1;
+    height:auto;
+    visibility: visible;
+}
