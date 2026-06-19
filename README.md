@@ -51,7 +51,7 @@ A sleek, responsive, and data-driven single-page weather dashboard that queries 
 ## 👩‍💻 About the Developer
 - **Name:** Sana Javed
 - **Role:** Frontend Developer & WordPress Expert
-- **Education:** BS Computer Science - University of Agriculture Faisalabad
+- **Education:** BS Computer Science
 - **Profiles:** [GitHub](https://github.com/sana-javed-04/) | [LinkedIn](https://www.linkedin.com/in/sana-javed-dev/) | [Fiverr](https://www.fiverr.com/users/sanajaved_dev/)
 
 ---
